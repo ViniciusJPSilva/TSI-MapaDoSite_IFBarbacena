@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="style/style.css?v=1" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <title>Barbacena</title>
+</head>
+
+<body>
+    <!-- Cabeçalho -->
+    <header class="fixed-top">
+        <nav class="navbar navbar-expand-lg bg-expand-lg navbar-dark">
+            <div class="container-fluid container">
+                <a class="navbar-brand title-logo" href="#" alt="Logo do IF Sudeste MG - Campus Barbacena">
+                    Campus Barbacena
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse container text-center justify-content-center"
+                    id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item dropdown col-10">
+                            <a class="nav-link dropdown-toggle active" href="#null" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Unidades
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item"
+                                        href="https://www.ifsudestemg.edu.br/institucional/unidades">Nossas Unidades</a>
+                                </li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item"
+                                        href="https://www.ifsudestemg.edu.br/barbacena">Barbacena</a></li>
+                                <li><a class="dropdown-item" href="https://www.ifsudestemg.edu.br/bomsucesso">Bom
+                                        Sucesso</a></li>
+                                <li><a class="dropdown-item"
+                                        href="https://www.ifsudestemg.edu.br/cataguases">Cataguases</a></li>
+                                <li><a class="dropdown-item" href="https://www.ifsudestemg.edu.br/juizdefora">Juiz de
+                                        Fora</a></li>
+                                <li><a class="dropdown-item" href="https://www.ifsudestemg.edu.br/manhuacu">Manhuaçu</a>
+                                </li>
+                                <li><a class="dropdown-item" href="https://www.ifsudestemg.edu.br/muriae">Muriaé</a>
+                                </li>
+                                <li><a class="dropdown-item" href="https://www.ifsudestemg.edu.br/riopomba">Rio
+                                        Pomba</a></li>
+                                <li><a class="dropdown-item" href="https://www.ifsudestemg.edu.br/santosdumont">Santos
+                                        Dumont</a></li>
+                                <li><a class="dropdown-item" href="https://www.ifsudestemg.edu.br/sjdr">São João Del
+                                        Rei</a></li>
+                                <li><a class="dropdown-item" href="https://www.ifsudestemg.edu.br/uba">Ubá</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown col-10">
+                            <a class="nav-link dropdown-toggle active" href="#null" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Social
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item"
+                                        href="https://www.ifsudestemg.edu.br/comunicacao-social">Comunicação Social</a>
+                                </li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="https://www.facebook.com/campusbarbacena/"
+                                        target="_blank">Facebook</a></li>
+                                <li><a class="dropdown-item" href="https://www.instagram.com/ifsudestemg/"
+                                        target="_blank">Instagram</a></li>
+                                <li><a class="dropdown-item" href="http://youtube.com/IFSUDESTEMGVIDEOS"
+                                        target="_blank">YouTube</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item"
+                                        href="https://www.ifsudestemg.edu.br/acesso-rapido/eventos">Eventos</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <form class="d-flex" role="search">
+                        <input id="search-text" class="form-control me-2" type="search" placeholder="Buscar"
+                            aria-label="Search">
+                        <button id="search-btn" class="btn btn-outline-success bg-white" type="submit">
+                            <span class="material-icons">search</span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+
+        <nav class="navbar navbar-expand-lg bg-expand-lg navbar-dark" id="sub-navbar">
+            <div class="container container-fluid collapse navbar-collapse" id="subDivNavbar">
+                <button class="navbar-toggler sub-nav-btn" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#subNavbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse container text-center justify-content-center"
+                    id="subNavbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 container text-center justify-content-center">
+                        <li class="nav-item col-1">
+                            <a class="nav-link active"
+                                href="https://www.ifsudestemg.edu.br/barbacena/acessibilidade">Acessibilidade</a>
+                        </li>
+                        <li class="nav-item col-2">
+                            <a class="nav-link active" href="https://www.ifsudestemg.edu.br/fale-conosco">Fale
+                                Conosco</a>
+                        </li>
+                        <li class="nav-item col-2">
+                            <a class="nav-link active"
+                                href="https://www.ifsudestemg.edu.br/perguntas-frequentes">Perguntas
+                                Frequentes</a>
+                        </li>
+                        <li class="nav-item col-1">
+                            <a class="nav-link active" href="https://www.ifsudestemg.edu.br/ouvidoria">Ouvidoria</a>
+                        </li>
+                        <li class="nav-item col-2">
+                            <a class="nav-link active"
+                                href="https://www.ifsudestemg.edu.br/hotsites/botoes-principais/hotsites">HotSites</a>
+                        </li>
+                        <li class="nav-item col-2">
+                            <a class="nav-link active" href="http://www.acessoainformacao.gov.br">Acesso à
+                                Informação</a>
+                        </li>
+                        <li class="nav-item col-2">
+                            <a class="nav-link active" href="https://www.ifsudestemg.edu.br/barbacena/mapadosite">Mapa
+                                do
+                                Site</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Conteúdo principal -->
+    <main>
+        <!-- Modais de pesquisa e do sub-menu -->
+        <div id="modal_search" class="modal" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title" id="modal_search_title">Buscar</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body text-center" id="modal_search_body">
+                        <h5 id="modal_search_text">O campo não pode ser vazio!</h5>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Fechar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="modal_sub_navbar" class="modal" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">Sub-Menu</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body text-center">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+                            <li class="nav-item">
+                                <a class="nav-link active detail-link"
+                                    href="https://www.ifsudestemg.edu.br/barbacena/acessibilidade">Acessibilidade</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active detail-link"
+                                    href="https://www.ifsudestemg.edu.br/fale-conosco">Fale Conosco</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active detail-link"
+                                    href="https://www.ifsudestemg.edu.br/perguntas-frequentes">Perguntas
+                                    Frequentes</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active detail-link"
+                                    href="https://www.ifsudestemg.edu.br/ouvidoria">Ouvidoria</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active detail-link"
+                                    href="https://www.ifsudestemg.edu.br/hotsites/botoes-principais/hotsites">HotSites</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active detail-link" href="http://www.acessoainformacao.gov.br">Acesso
+                                    à Informação</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active detail-link"
+                                    href="https://www.ifsudestemg.edu.br/barbacena/mapadosite">Mapa do
+                                    Site</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Fechar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <br>
+        <div class="container text-center">
+            <section> <!-- Banner Principal -->
+                <a href="https://www.ifsudestemg.edu.br/hotsites/processo-seletivo-2023-1">
+                    <p class="display-none">Processo Seletivo</p>
+                    <img src="images/processo seletivo.png" class="img-fluid img_banner" alt="Processo Seletivo">
+                </a>
+            </section>
+            <br>
+            <hr>
+            <section> <!-- Notícias -->
+                <a href="https://www.ifsudestemg.edu.br/noticias/barbacena/">
+                    <h1 class="display-6 text-start hover-underline-animation">Notícias</h1>
+                </a>
+                <div class="row align-items-start">
+                    <article class="col-sm-4 mb-3 mb-sm-0">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Ensino</h5>
+                                <p class="card-text">Conteúdos exclusivos sobre metodologias de ensino,
+                                    tendências educacionais e muito mais.</p>
+                                <a href="https://www.ifsudestemg.edu.br/noticias/barbacena/ensino/"
+                                    class="btn btn-primary">Mais Ensino</a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="col-sm-4 mb-3 mb-sm-0">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Pesquisa</h5>
+                                <p class="card-text">Fique por dentro das últimas novidades em
+                                    pesquisas acadêmicas.</p>
+                                <a href="https://www.ifsudestemg.edu.br/barbacena/institucional/pesquisa"
+                                    class="btn btn-primary">Mais Pesquisa</a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="col-sm-4 mb-3 mb-sm-0">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Extensão</h5>
+                                <p class="card-text">Engaje-se com a comunidade através dos nossos
+                                    programas de extensão universitária.</p>
+                                <a href="https://www.ifsudestemg.edu.br/noticias/barbacena/extensao/"
+                                    class="btn btn-primary">Mais Extensão</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </section>
+            <br>
+            <hr>
+            <section class="row align-items-start"> <!-- Cursos, Servidor e Links úteis -->
+                <article class="col-sm-4 mb-3 mb-sm-0">
+                    <div class="card card-body">
+                        <a href="https://www.ifsudestemg.edu.br/hotsites/botoes-principais/cursos">
+                            <h1 class="display-6 text-start text-center hover-underline-animation">Cursos</h1>
+                        </a>
+                        <div class="col-15 mb-2">
+                            <a href="https://www.ifsudestemg.edu.br/barbacena/cursos/como-ingressar"
+                                class="btn btn-outline-success content-links">Como ingressar</a>
+                        </div>
+                        <div class="col-15 mb-2">
+                            <a href="https://www.ifsudestemg.edu.br/barbacena/cursos/graduacao"
+                                class="btn btn-outline-success content-links">Graduação</a>
+                        </div>
+                        <div class="col-15 mb-2">
+                            <a href="https://www.ifsudestemg.edu.br/barbacena/cursos/pos-graduacao"
+                                class="btn btn-outline-success content-links">Pos-Graduação</a>
+                        </div>
+                        <div class="col-15 mb-2">
+                            <a href="https://www.ifsudestemg.edu.br/barbacena/cursos/tecnicos"
+                                class="btn btn-outline-success content-links">Técnicos</a>
+                        </div>
+                        <div class="col-15 mb-2">
+                            <a href="https://www.ifsudestemg.edu.br/barbacena/cursos/educacao-a-distancia"
+                                class="btn btn-outline-success content-links">EAD</a>
+                        </div>
+                    </div>
+                </article>
+                <article class="col-sm-4 mb-3 mb-sm-0">
+                    <div class="card card-body">
+                        <a href="https://www.ifsudestemg.edu.br/barbacena/acesso-rapido/servidor">
+                            <h1 class="display-6 text-start text-center hover-underline-animation">Servidor</h1>
+                        </a>
+                        <div class="col-15 p mb-2">
+                            <a href="https://www.ifsudestemg.edu.br/acessoainformacao/servidores"
+                                class="btn btn-outline-success content-links">Servidores Públicos</a>
+                        </div>
+                        <div class="col-15 p mb-2">
+                            <a href="https://www.ifsudestemg.edu.br/documentos-institucionais/unidades/reitoria/pro-reitorias/administracao/outros-documentos/terceirizados.pdf"
+                                class="btn btn-outline-success content-links">Tercerizados</a>
+                        </div>
+                        <div class="col-15 p mb-2">
+                            <a href="https://www.ifsudestemg.edu.br/institucional/gestao-de-pessoas/quadro-funcional/quadro-de-referencia-tae"
+                                class="btn btn-outline-success content-links">Quadro de Referência TAE</a>
+                        </div>
+                        <div class="col-15 p mb-2">
+                            <a href="https://www.ifsudestemg.edu.br/institucional/comissoes-e-comites/cgpi"
+                                class="btn btn-outline-success content-links">Integridade Publica</a>
+                        </div>
+                        <div class="col-15 p mb-2">
+                            <a href="https://www.ifsudestemg.edu.br/institucional/gestao-de-pessoas/quadro-funcional/cargos-ocupados-desocupados"
+                                class="btn btn-outline-success content-links">Cargos Ocupados/ Desocupados</a>
+                        </div>
+                    </div>
+                </article>
+                <article class="col-sm-4 mb-3 mb-sm-0">
+                    <div class="card card-body">
+                        <h1 class="display-6 text-start text-center">Links Uteis</h1>
+                        <div class="col-15 p mb-2">
+                            <a href="https://www.ifsudestemg.edu.br/imagens/links-uteis/enem"
+                                class="btn btn-outline-success content-links">ENEM</a>
+                        </div>
+                        <div class="col-15 p mb-2">
+                            <a href="https://www.ifsudestemg.edu.br/imagens/links-uteis/encceja"
+                                class="btn btn-outline-success content-links">Enceja</a>
+                        </div>
+                        <div class="col-15 p mb-2">
+                            <a href="https://www.ifsudestemg.edu.br/imagens/links-uteis/copese"
+                                class="btn btn-outline-success content-links">Copese</a>
+                        </div>
+                        <div class="col-15 p mb-2">
+                            <a href="https://emec.mec.gov.br/emec/consulta-cadastro/detalhamento/d96957f455f6405d14c6542552b0f6eb/MzI3OQ=="
+                                class="btn btn-outline-success content-links">e-Mec</a>
+                        </div>
+                        <div class="col-15 p mb-2">
+                            <a href="https://www.ifsudestemg.edu.br/acesso-rapido/concursos"
+                                class="btn btn-outline-success content-links">Concursos</a>
+                        </div>
+                    </div>
+                </article>
+            </section>
+            <br>
+            <hr>
+            <section> <!-- Estudante -->
+                <a href="https://www.ifsudestemg.edu.br/barbacena/acesso-rapido/estudante">
+                    <h1 class="display-6 text-start hover-underline-animation">Estudante</h1>
+                </a>
+                <div class="row align-items-start">
+                    <div class="btn-group flex-wrap" role="group" aria-label="Basic example">
+                        <a href="https://www.ifsudestemg.edu.br/barbacena/institucional/ensino/apoio-ao-discente"
+                            class="btn btn-outline-success content-links m-1">Apoio ao Discente</a>
+                        <a href="https://www.ifsudestemg.edu.br/barbacena/acesso-rapido/biblioteca"
+                            class="btn btn-outline-success content-links m-1">Biblioteca</a>
+                        <a href="https://www.ifsudestemg.edu.br/documentos-institucionais/calendarios"
+                            class="btn btn-outline-success content-links m-1">Calendário</a>
+                        <a href="https://www.ifsudestemg.edu.br/barbacena/acesso-rapido/editais"
+                            class="btn btn-outline-success content-links m-1">Editais</a>
+                        <a href="https://www.ifsudestemg.edu.br/barbacena/sistemas"
+                            class="btn btn-outline-success content-links m-1">Plataformas</a>
+                    </div>
+                    <div class="btn-group flex-wrap" role="group" aria-label="Basic example">
+                        <a href="https://www.ifsudestemg.edu.br/barbacena/acesso-rapido/estudante"
+                            class="btn btn-outline-success content-links m-1">Matrícula</a>
+                        <a href="https://www.ifsudestemg.edu.br/oportunidades#b_start=0"
+                            class="btn btn-outline-success content-links m-1">Oportunidades</a>
+                        <a href="https://www.ifsudestemg.edu.br/barbacena/links-destaques/ensino"
+                            class="btn btn-outline-success content-links m-1">Ensino</a>
+                        <a href="https://www.ifsudestemg.edu.br/barbacena/links-destaques/pesquisa"
+                            class="btn btn-outline-success content-links m-1">Pesquisa</a>
+                        <a href="https://www.ifsudestemg.edu.br/barbacena/links-destaques/extensao"
+                            class="btn btn-outline-success content-links m-1">Extensão</a>
+                    </div>
+                </div>
+            </section>
+            <br>
+            <hr>
+            <section class="justify-content-center"> <!-- Campus Barbacena -->
+                <h1 class="display-6">Campus Barbacena</h1>
+                <div class="row align-items-start">
+                    <div class="btn-group flex-wrap" role="group" aria-label="Basic example">
+                        <a href="https://www.ifsudestemg.edu.br/barbacena/institucional/o-instituto"
+                            class="btn btn-outline-success content-links m-1">O Instituto</a>
+                        <a href="https://www.ifsudestemg.edu.br/barbacena/institucional/o-campus"
+                            class="btn btn-outline-success content-links m-1">História</a>
+                        <a href="https://www.ifsudestemg.edu.br/barbacena/institucional/gabinete"
+                            class="btn btn-outline-success content-links m-1">Gabinete</a>
+                        <a href="https://www.ifsudestemg.edu.br/barbacena/institucional/gestao-institucional"
+                            class="btn btn-outline-success content-links m-1">Gestão Institucional</a>
+                        <a href="https://www.ifsudestemg.edu.br/barbacena/institucional/gestao-de-pessoas"
+                            class="btn btn-outline-success content-links m-1">Gestão de Pessoas</a>
+                    </div>
+                    <div class="btn-group flex-wrap" role="group" aria-label="Basic example">
+                        <a href="https://www.ifsudestemg.edu.br/barbacena/institucional/corpo-docente"
+                            class="btn btn-outline-success content-links m-1">Corpo Doscente</a>
+                        <a href="https://www.ifsudestemg.edu.br/barbacena/institucional/diretorias-sistemicas"
+                            class="btn btn-outline-success content-links m-1">Diretorias Sistêmicas</a>
+                        <a href="https://www.ifsudestemg.edu.br/barbacena/institucional/orgaos-colegiados"
+                            class="btn btn-outline-success content-links m-1">Órgãos Colegiados</a>
+                        <a href="https://www.ifsudestemg.edu.br/barbacena/institucional/orgaos-estudantis"
+                            class="btn btn-outline-success content-links m-1">Órgãos Estudantis</a>
+                        <a href="https://www.ifsudestemg.edu.br/barbacena/institucional/comissoes-e-comites"
+                            class="btn btn-outline-success content-links m-1">Comissões e Comitês</a>
+                    </div>
+                </div>
+            </section>
+            <br>
+            <hr>
+            <section> <!-- Documentos -->
+                <a href="https://www.ifsudestemg.edu.br/barbacena/acesso-rapido/documentos">
+                    <h1 class="display-6 text-start hover-underline-animation">Documentos</h1>
+                </a>
+                <div class="row align-items-start doc-links">
+                    <div class="btn-group flex-wrap" role="group" aria-label="Basic example">
+                        <a href="https://www.ifsudestemg.edu.br/acessoainformacao/licitacoes-e-contratos"
+                            class="btn btn-outline-success content-links m-1">Licitações e Contratos</a>
+                        <a href="https://www.ifsudestemg.edu.br/acesso-rapido/banco-de-expertises"
+                            class="btn btn-outline-success content-links m-1">Banco de Expertises</a>
+                        <a href="https://www.ifsudestemg.edu.br/barbacena/acesso-rapido/licitacao"
+                            class="btn btn-outline-success content-links m-1">Licitações</a>
+                        <a href="https://www.ifsudestemg.edu.br/acesso-rapido/sipac-pagina-publica"
+                            class="btn btn-outline-success content-links m-1">SIPAC</a>
+                        <a href="https://www.ifsudestemg.edu.br/institucional/pro-reitorias/pesquisa-posgraduacao-e-inovacao/inovacao/nittec/inovacao/portfolio"
+                            class="btn btn-outline-success content-links m-1">Portfólio de Tecnologias</a>
+                        <a href="https://www.ifsudestemg.edu.br/editais/editais-de-barbacena"
+                            class="btn btn-outline-success content-links m-1">Editais Barbacena</a>
+                    </div>
+                    <div class="btn-group flex-wrap" role="group" aria-label="Basic example">
+                        <a href="https://www.ifsudestemg.edu.br/acesso-rapido/plano-de-dados-abertos"
+                            class="btn btn-outline-success content-links m-1">Dados Abertos</a>
+                        <a href="https://www.ifsudestemg.edu.br/documentos-institucionais/unidades/barbacena"
+                            class="btn btn-outline-success content-links m-1">Doc. Institucionais</a>
+                        <a href="https://www.ifsudestemg.edu.br/documentos-institucionais/unidades/reitoria/pro-reitorias/ensino/graduacao/registro-de-diplomas"
+                            class="btn btn-outline-success content-links m-1">Registro de Diploma</a>
+                        <a href="https://www.ifsudestemg.edu.br/documentos-institucionais/unidades/reitoria/pro-reitorias/ensino/graduacao/diplomas-de-graduacao"
+                            class="btn btn-outline-success content-links m-1">Diplomas de Graduação</a>
+                        <a href="https://www.ifsudestemg.edu.br/documentos-institucionais/unidades/reitoria/pro-reitorias/ensino/mestrado/registro-de-diplomas"
+                            class="btn btn-outline-success content-links m-1">Diplomas de Mestrado</a>
+                        <a href="https://www.ifsudestemg.edu.br/documentos-institucionais/relatorios-de-gestao"
+                            class="btn btn-outline-success content-links m-1">Relatório de Gestão</a>
+                    </div>
+                </div>
+            </section>
+            <br>
+            <hr>
+            <section> <!-- Institucional -->
+                <a href="https://www.ifsudestemg.edu.br/institucional">
+                    <h1 class="display-6 text-start hover-underline-animation">Institucional</h1>
+                </a>
+                <div class="row align-items-start doc-links">
+                    <div class="btn-group flex-wrap" role="group" aria-label="Basic example">
+                        <a href="https://www-periodicos-capes-gov-br.ez367.periodicos.capes.gov.br/index.php"
+                            class="btn btn-outline-success content-links m-1">Periódicos</a>
+                        <a href="https://www.ifsudestemg.edu.br/acessoainformacao/acoes-e-programas"
+                            class="btn btn-outline-success content-links m-1">Ações e Programas</a>
+                        <a href="https://www.ifsudestemg.edu.br/acessoainformacao/participacao-social"
+                            class="btn btn-outline-success content-links m-1">Participação Social</a>
+                        <a href="https://www.ifsudestemg.edu.br/acessoainformacao/auditorias"
+                            class="btn btn-outline-success content-links m-1">Auditoria</a>
+                        <a href="https://www.ifsudestemg.edu.br/acessoainformacao/convenios-e-transferencias"
+                            class="btn btn-outline-success content-links m-1">Convênios e Transferências</a>
+                    </div>
+                    <div class="btn-group flex-wrap" role="group" aria-label="Basic example">
+                        <a href="https://www.ifsudestemg.edu.br"
+                            class="btn btn-outline-success content-links m-1">Reitoria</a>
+                        <a href="https://www.ifsudestemg.edu.br/institucional/pro-reitorias/desenvolvimento-institucional/estrutura-organizacional/planejamento-e-desenvolvimento-institucional/planejamento-institucional/pdi"
+                            class="btn btn-outline-success content-links m-1">Plano de Desenvolvimento Institucional
+                            (PDI)</a>
+                        <a href="https://www.ifsudestemg.edu.br/institucional/pdi/pdi-2014-2020"
+                            class="btn btn-outline-success content-links m-1">PDI 2014/2 - 2020</a>
+                        <a href="https://www.ifsudestemg.edu.br/institucional/pdi/pdi-2021-2025"
+                            class="btn btn-outline-success content-links m-1">PDI 2021 - 2025</a>
+                        <a href="https://www.ifsudestemg.edu.br/acessoainformacao/transparencia-e-prestacao-de-contas"
+                            class="btn btn-outline-success content-links m-1">Transparência e Prestação de Contas</a>
+                    </div>
+                </div>
+            </section>
+            <br>
+            <hr>
+            <section class="justify-content-center"> <!-- Informações -->
+                <h1 class="display-6">Informações</h1>
+                <div class="row align-items-start doc-links">
+                    <div class="btn-group flex-wrap" role="group" aria-label="Basic example">
+                        <a href="https://www.ifsudestemg.edu.br/institucional/gestao-de-pessoas/quadro-funcional/banco-de-professor-equivalente"
+                            class="btn btn-outline-success content-links m-1">Banco de Professor Equivalente </a>
+                        <a href="https://www.ifsudestemg.edu.br/institucional/gestao-de-pessoas/quadro-funcional/cargos-ocupados-desocupados"
+                            class="btn btn-outline-success content-links m-1">Cargos Ocupados/ Desocupados </a>
+                        <a href="https://www.ifsudestemg.edu.br/institucional/pro-reitorias/administracao/estrutura-organizacional/contabilidade-e-custos"
+                            class="btn btn-outline-success content-links m-1">Contabilidade</a>
+                        <a href="https://www.ifsudestemg.edu.br/acessoainformacao/protecao-de-dados-pessoais-no-if-sudeste-mg"
+                            class="btn btn-outline-success content-links m-1">Segurança e Proteção</a>
+                        <a href="https://www.ifsudestemg.edu.br/documentos-institucionais/carta_de_servicos.pdf/view"
+                            class="btn btn-outline-success content-links m-1">Cartas de Serviço</a>
+                    </div>
+                    <div class="btn-group flex-wrap" role="group" aria-label="Basic example">
+                        <a href="https://www.ifsudestemg.edu.br/acessoainformacao/pid-e-rid"
+                            class="btn btn-outline-success content-links m-1">PID e RID</a>
+                        <a href="https://www.ifsudestemg.edu.br/acessoainformacao/informacoes-classificadas"
+                            class="btn btn-outline-success content-links m-1">Informações Classificadas</a>
+                        <a href="https://www.ifsudestemg.edu.br/acessoainformacao/servico-informacao-cidadao-sic"
+                            class="btn btn-outline-success content-links m-1">Serviço de Informação ao Cidadão - SIC</a>
+                        <a href="https://www.ifsudestemg.edu.br/acessoainformacao/dados-abertos"
+                            class="btn btn-outline-success content-links m-1">Dados Abertos</a>
+                        <a href="https://eagendas.cgu.gov.br" class="btn btn-outline-success content-links m-1">Agendas
+                            de Autoridades</a>
+                    </div>
+                </div>
+            </section>
+            <br>
+            <hr>
+            <section> <!-- Internacional e Convocações -->
+                <a href="https://www.ifsudestemg.edu.br/acesso-rapido/internacional">
+                    <h1 class="display-6 text-start hover-underline-animation">Internacional e Convocações</h1>
+                </a>
+                <div class="row align-items-start doc-links">
+                    <div class="btn-group flex-wrap" role="group" aria-label="Basic example">
+                        <a href="https://www.ifsudestemg.edu.br/institucional/pro-reitorias/extensao/estrutura-organizacional/driit"
+                            class="btn btn-outline-success content-links m-1">Relações Internacionais</a>
+                        <a href="https://www.ifsudestemg.edu.br/convocacoes/barbacena/convocacoes-do-conselho-de-campus"
+                            class="btn btn-outline-success content-links m-1">Conselho de Campos</a>
+                        <a href="https://www.ifsudestemg.edu.br/convocacoes/convocacoes-orgaos-superiores-e-colegiados"
+                            class="btn btn-outline-success content-links m-1">Orgãos Superiores</a>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="text-center text-lg-start bg-light text-muted">
+        <!-- Copyright -->
+        <div class="text-center navbar p-3 justify-content-center">
+            © 2023 Copyright :: Desenvolvido por Gabriel Afonso e Vinícius José
+        </div>
+    </footer>
+
+    <!-- SCRIPTS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+        crossorigin="anonymous"></script>
+    <script src="scripts/script.js"></script>
+</body>
+
+</html>

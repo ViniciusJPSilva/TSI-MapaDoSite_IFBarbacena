@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+body {
+    /* height: 5000px; */
+    min-width: 300px;
+}
+
+main {
+    padding-top: 80px;
+}
+
+footer {
+    padding-top: 50px; 
+    background-color: #19882c;
+}
+
+footer * {
+    color: #FFF;
+}
+
+.navbar {
+    background-color: #19882C;
+}
+
+.navbar-brand img {
+    height: 3vw;
+}
+
+.dropdown-item:hover,
+.detail-link:hover {
+    background-color: #19882b56 !important;
+}
+
+.title-logo {
+    font-family: 'Raleway', sans-serif;
+    font-size: 140% !important;
+    text-decoration: underline;
+}
+
+.btn-primary {
+    background-color: #19882C !important;
+    border-color: #19882C !important;
+}
+
+.display-none {
+    display: none;
+}
+
+.hide {
+    visibility: hidden;
+}
+
+.img_banner {
+    width: 100%;
+}
+
+.content-links {
+    width: 220px;
+}
+
+.doc-links a {
+    width: 200px;
+}
+
+.hover-underline-animation {
+    display: inline-block;
+    position: relative;
+    color: #212529;
+}
+
+.hover-underline-animation::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #212529;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+#sub-navbar {
+    background-color: #336A3C;
+    font-size: 80%;
+    height: 25px;
+}
+
+#search-btn {
+    font-size: 0%;
+}
+
+#search-btn:hover,
+#search-btn:active {
+    background-color: #4C4C4C !important;
+    color: #FFF !important;
+}
+
+@media screen and (max-width: 991px) {
+    main {
+        padding-top: 120px;
+    }
+
+    .content-links {
+        width: 100%;
+    }
+
+    #sub-navbar {
+        height: 60px;
+    }
+
+    #sub-navbar #subNavbarSupportedContent {
+        display: none !important;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    main {
+        padding-top: 100px;
+    }
+}
