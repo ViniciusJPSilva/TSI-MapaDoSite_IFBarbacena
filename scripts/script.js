@@ -156,6 +156,7 @@ function loadDarkTheme() {
     document.documentElement.style.setProperty('--hover-links-font-color', '#202124');
 
     document.querySelector("#banner-img").style.webkitFilter = "grayscale(40%)";
+    document.querySelector("#dark-mode-icon").innerHTML = "light_mode";
     document.querySelectorAll(".card").forEach((element) => {
         element.classList.add("bg-dark");
     });
@@ -185,6 +186,7 @@ function loadLightTheme() {
     document.documentElement.style.removeProperty('--hover-links-font-color');
 
     document.querySelector("#banner-img").style.webkitFilter = "grayscale(0%)";
+    document.querySelector("#dark-mode-icon").innerHTML = "dark_mode";
     document.querySelectorAll(".card").forEach((element) => {
         element.classList.remove("bg-dark");
     });
